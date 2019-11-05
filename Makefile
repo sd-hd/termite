@@ -1,7 +1,7 @@
 VERSION = $(shell git describe --tags)
 GTK = gtk+-3.0
 VTE = vte-2.91
-PREFIX ?= /usr/local
+PREFIX ?= /usr/
 BINDIR ?= ${PREFIX}/bin
 DATADIR ?= ${PREFIX}/share
 MANDIR ?= ${DATADIR}/man
