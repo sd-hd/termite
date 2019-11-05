@@ -22,6 +22,7 @@ CXXFLAGS := -std=c++11 -O3 \
 	    -D_POSIX_C_SOURCE=200809L \
 	    -DTERMITE_VERSION=\"${VERSION}\" \
 	    ${shell pkg-config --cflags ${GTK} ${VTE}} \
+	    `pkgconf --cflags --libs gtk+-3.0` \
 	    ${CXXFLAGS}
 
 ifeq (${CXX}, g++)
