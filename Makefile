@@ -1,5 +1,6 @@
 VERSION = $(shell git describe --tags)
-GTK = gtk+-3.0
+# GTK = gtk+-3.0
+GTK = gtk+-wayland-3.0
 VTE = vte-2.91
 PREFIX ?= /usr/
 BINDIR ?= ${PREFIX}/bin
